@@ -1,0 +1,26 @@
+{
+  "name": "web-agent-harness-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench": "tsx src/runner.ts",
+    "score": "tsx src/score.ts",
+    "optimize": "tsx src/optimize.ts",
+    "test:browser": "playwright test",
+    "install:browsers": "playwright install chromium"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.45.0",
+    "dotenv": "^16.4.5",
+    "execa": "^9.3.0",
+    "fs-extra": "^11.2.0",
+    "nanoid": "^5.0.7",
+    "openai": "^4.56.0",
+    "tsx": "^4.16.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
